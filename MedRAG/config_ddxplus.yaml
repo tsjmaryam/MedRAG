@@ -1,0 +1,125 @@
+dataset_name: ddxplus
+
+paths:
+  kg_file: ./dataset/knowledge graph of DDXPlus.xlsx
+  train_folder: ./dataset/df/train
+  test_folder: ./dataset/df/test
+  patient_csv: ./dataset/AI Data Set with Categories.csv
+  document_embeddings: ./dataset/document_embeddings.npy
+  kg_embeddings: ./Embeddings_saved/DDXPlus_KG_embeddings
+
+columns:
+  participant_id: Participant No.
+  level2: Level 2
+  diagnosis: Processed Diagnosis
+  pain_location: Pain Presentation and Description
+  pain_symptoms: Pain descriptions and assorted symptoms (self-report)
+  pain_restriction: Pain restriction
+
+categories:
+  - thoracoabdominal_pain_syndromes
+  - neuropathic_pain_syndromes
+  - craniofacial_pain_syndromes
+  - cervical_spine_pain_syndromes
+  - limb_and_joint_pain_syndromes
+  - back_pain_syndromes
+  - lumbar_degenerative_and_stenosis_and_radicular_and_sciatic_syndromes
+  - generalized_pain_syndromes
+
+diagnoses_list:
+  - acute copd exacerbation infection
+  - bronchiectasis
+  - bronchiolitis
+  - bronchitis
+  - bronchospasm acute asthma exacerbation
+  - pulmonary embolism
+  - pulmonary neoplasm
+  - spontaneous pneumothorax
+  - urti
+  - viral pharyngitis
+  - whooping cough
+  - acute laryngitis
+  - acute pulmonary edema
+  - croup
+  - epiglottitis
+  - pneumonia
+  - atrial fibrillation
+  - myocarditis
+  - pericarditis
+  - psvt
+  - possible nstemi stemi
+  - stable angina
+  - unstable angina
+  - gerd
+  - boerhaave syndrome
+  - pancreatic neoplasm
+  - scombroid food poisoning
+  - inguinal hernia
+  - tuberculosis
+  - hiv initial infection
+  - ebola
+  - influenza
+  - chagas
+  - acute otitis media
+  - acute rhinosinusitis
+  - allergic sinusitis
+  - chronic rhinosinusitis
+  - myasthenia gravis
+  - guillain barre syndrome
+  - cluster headache
+  - acute dystonic reactions
+  - sle
+  - sarcoidosis
+  - anaphylaxis
+  - panic attack
+  - spontaneous rib fracture
+  - anemia
+
+level3_to_level2:
+  acute_copd_exacerbation_infection: respiratory_system
+  atrial_fibrillation: cardiovascular_system
+  gerd: gastrointestinal
+  anemia: hematologic
+  viral_pharyngitis: respiratory_system
+  inguinal_hernia: gastrointestinal
+  myasthenia_gravis: neurological
+  spontaneous_pneumothorax: respiratory_system
+  cluster_headache: neurological
+  boerhaave: gastrointestinal
+  spontaneous_rib_fracture: musculoskeletal
+  hiv_initial_infection: infectious
+  panic_attack: psychiatric
+  anaphylaxis: immunological
+  sle: immunological
+  sarcoidosis: immunological
+  tuberculosis: infectious
+  influenza: infectious
+  pneumonia: respiratory_system
+  unstable_angina: cardiovascular_system
+  stable_angina: cardiovascular_system
+  possible_nstemi_stemi: cardiovascular_system
+  psvt: cardiovascular_system
+  myocarditis: cardiovascular_system
+  pericarditis: cardiovascular_system
+  pulmonary_embolism: respiratory_system
+  pulmonary_neoplasm: respiratory_system
+  acute_pulmonary_edema: respiratory_system
+  bronchitis: respiratory_system
+  bronchiectasis: respiratory_system
+  bronchiolitis: respiratory_system
+  bronchospasm_acute_asthma_exacerbation: respiratory_system
+  urti: respiratory_system
+  whooping_cough: respiratory_system
+  acute_laryngitis: respiratory_system
+  croup: respiratory_system
+  epiglottitis: respiratory_system
+  acute_otitis_media: ear_nose_throat
+  acute_rhinosinusitis: ear_nose_throat
+  allergic_sinusitis: ear_nose_throat
+  chronic_rhinosinusitis: ear_nose_throat
+  guillain_barre_syndrome: neurological
+  acute_dystonic_reactions: neurological
+  chagas: infectious
+  ebola: infectious
+  scombroid_food_poisoning: gastrointestinal
+  pancreatic_neoplasm: gastrointestinal
