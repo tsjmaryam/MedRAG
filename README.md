@@ -17,7 +17,7 @@ MedRAG is a modular, config-driven Retrieval-Augmented Generation (RAG) pipeline
 ## Models
 
 - **Embeddings:** all-MiniLM-L6-v2 (local, no API dependency)
-- **LLM:** Qwen 2.5 3B running locally via Ollama (no API key required)
+- **LLM:** Qwen 2.5 B running locally via Ollama (no API key required)
 - The pipeline is model-agnostic and can be switched to any Ollama-compatible model via a one-line change in `main_MedRAG_v2.py`
 
 **Evaluation pipeline** - compares generated diagnoses against ground truth labels and reports top-1 accuracy with mismatch analysis.
