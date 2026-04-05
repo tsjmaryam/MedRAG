@@ -14,7 +14,11 @@ MedRAG is a modular, config-driven Retrieval-Augmented Generation (RAG) pipeline
 
 **FAISS semantic retrieval** - indexes all training patient records as dense vectors and retrieves the top-k most similar cases for each new patient query.
 
-**LLM-generated diagnosis reports** - generates structured reports including diagnosis, treatment recommendations, physiotherapy plans, and further evaluation guidance using Qwen 72B via HuggingFace Inference API.
+## Models
+
+- **Embeddings:** all-MiniLM-L6-v2 (local, no API dependency)
+- **LLM:** Qwen 2.5 3B running locally via Ollama (no API key required)
+- The pipeline is model-agnostic and can be switched to any Ollama-compatible model via a one-line change in `main_MedRAG_v2.py`
 
 **Evaluation pipeline** - compares generated diagnoses against ground truth labels and reports top-1 accuracy with mismatch analysis.
 
