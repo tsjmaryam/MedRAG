@@ -32,7 +32,7 @@ MedRAG is a modular, config-driven Retrieval-Augmented Generation (RAG) pipeline
 | Embeddings | sentence-transformers (all-MiniLM-L6-v2) |
 | Vector Search | FAISS (faiss-cpu) |
 | Knowledge Graph | NetworkX, pandas, openpyxl |
-| LLM (primary) | Qwen/Qwen2.5-72B-Instruct via HuggingFace |
+| LLM (local) | Qwen2.5 B |
 | LLM (fallback) | mistralai/Mistral-Nemo-Instruct-2407 |
 | Config Management | PyYAML |
 | NLP | NLTK, scikit-learn |
